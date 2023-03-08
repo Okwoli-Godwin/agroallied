@@ -23,7 +23,7 @@ const Card = styled.div`
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 10px;
     padding-left: 25px;
-    padding-right: 25px;
+    padding-right: 27px;
     h4{
         color: #03993f;
     }
