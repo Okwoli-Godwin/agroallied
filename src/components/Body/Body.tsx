@@ -25,15 +25,15 @@ const Card = styled.div`
     padding-left: 25px;
     padding-right: 25px;
     h4{
-        color: #008737;
+        color: #03993f;
     }
     p{
-        color: #008737;
+        color: #03993f;
     }
 `
 const Top = styled.div`
     h2{
-        color: #008737;
+        color: #03993f;
     font-weight: 900;
     font-size: 3.5em;
     font-family: "Cabin Sketch",cursive;
