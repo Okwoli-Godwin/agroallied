@@ -32,7 +32,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 height: 15vh;
-background-color: blue;
+background-color: #03993f;
 `
 
 const Wrapper = styled.div`
