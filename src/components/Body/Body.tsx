@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import img from "../Assets/leaf.png"
 
 const Body = () => {
   return (
@@ -10,12 +11,28 @@ const Body = () => {
                 <Card><h4>For the economy</h4> <p>We consciously create opportunities for smallholder farmers to improve their incomes and quality of life</p></Card>
 
             </Left>
+            <Right>
+                <Img src={img} />
+            </Right>
         </Wrapper>
     </Container>
   )
 }
 
 export default Body
+const Img = styled.img`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+`
+const Right = styled.div`
+    width: 50%;
+    display: flex;
+    overflow: hidden;
+    height: 450px;
+    border-radius: 20px;
+    margin-top: 70px;
+`
 const Card = styled.div`
     width: 85%;
     height: 120px;
