@@ -12,6 +12,8 @@ const App = () => {
       <br />
       <br />
       <Hero />
+      <br />
+      <br />
       <Footer />
     </div>
   )
