@@ -1,5 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components";
 
 const Header = () => {
   return (
@@ -15,43 +16,44 @@ const Header = () => {
         </Navs>
 
         <Auth>
-          <Signup>Sign Up</Signup>
+          <NavLink to="/signup">
+            <Signup>Sign Up</Signup>
+          </NavLink>
           <Signup>Sign Out</Signup>
         </Auth>
-       
       </Wrapper>
     </Container>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
 
 const Container = styled.div`
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-height: 15vh;
-background-color: #03993f;
-`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+  background-color: #03993f;
+`;
 
 const Wrapper = styled.div`
-width: 80%;
-display: flex;
-align-items: center;
-justify-content: space-between;
-color: white
-`
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+`;
 const Navs = styled.div`
-display: flex;
-`
+  display: flex;
+`;
 const Nav = styled.div`
-margin-right: 30px;
-`
-const Logo = styled.div``
+  margin-right: 30px;
+`;
+const Logo = styled.div``;
 const Signup = styled.div`
-margin-right: 30px;
-`
+  margin-right: 30px;
+`;
 const Auth = styled.div`
   display: flex;
-`
+`;
