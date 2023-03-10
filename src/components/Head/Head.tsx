@@ -1,12 +1,8 @@
-
 import React from 'react'
 import styled from 'styled-components'
-import img from "../Assets/agi.png"
+import img from "../Assets/img.png"
 
-
-
-
-const Header = () => {
+const Head = () => {
   return (
     <Container>
         <Wrapper>
@@ -29,7 +25,7 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Head
 const Button = styled.button`
     border: none;
     outline: none;
@@ -56,7 +52,7 @@ const Right = styled.div`
 `
 const Nav = styled.div`
     margin-left: 45px;
-    color: #03993f;
+    color: #fff;
     font-weight: 500;
     cursor: pointer;
 `
@@ -75,7 +71,7 @@ const Left = styled.div`
     align-items: center;
 `
 const Wrapper = styled.div`
-    width: 90%;
+    width: 95%;
     height: 100%;
     display: flex;
     align-items: cente;
@@ -86,5 +82,4 @@ const Container = styled.div`
     display: flex;
     height: 80px;
     justify-content: center;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 `

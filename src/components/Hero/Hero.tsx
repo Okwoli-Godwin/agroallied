@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import img from "../Assets/leaf1.png"
 import img2 from "../Assets/paw.png"
+import img3 from "../Assets/busi.png"
 
 const Hero = () => {
   return (
@@ -18,9 +19,9 @@ const Hero = () => {
             </Card>
             <Card>
                 <Img src={img} />
-                <Img2 src={img2} />
-                <Up>Primary Production</Up>
-                <p>We enhance yield outcomes in primary agricultural production, through well-structured and organized support such as farm and farmer management, mechanization and irrigation for small and large out grower schemes</p>
+                <Img2 src={img3} />
+                <Up>Agri Business</Up>
+                <p>Our agribusiness services are geared towards supporting and enhancing activities such as aggregation and logistics that connect agricultural intermediaries and value chain participants.</p>
             </Card>
             <Card>
                 <Img src={img} />
@@ -78,11 +79,16 @@ const Card = styled.div`
     align-items: center;
     /* background-color: red; */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
+    transition: all 350ms;
+    cursor: pointer;
     p{
         text-align: center;
         color: #606060;
         margin-top: 20px;
+    }
+    :hover{
+        margin-top: -7px;
     }
 `
 const Cardhold = styled.div`
