@@ -1,79 +1,175 @@
 import React from 'react'
 import styled from 'styled-components'
-import img from "../Assets/leaf.png"
+import img from "../Assets/agro2.jpg"
+import img2 from "../Assets/agro3.jpg"
+import img3 from "../Assets/agro5.jpg"
+import Head from '../Head/Head'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Body = () => {
+    const settings = {
+		dots: true,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+        fade: true,
+		speed: 800,
+		autoplaySpeed: 5000,
+		cssEase: "linear",
+	};
   return (
-    <Container>
-        <Wrapper>
-            <Left>
-                <Top><h2>To create prosperity</h2></Top>
-                <Card><h4>For the economy</h4> <p>We consciously create opportunities for smallholder farmers to improve their incomes and quality of life</p></Card>
+    <div style={{overflow: "hidden"}}>
+        <Slider {...settings}>
+            <Container>
+                <Box></Box>
+                <Wrapper>
+                    <Hold>
+                        <Head />
+                    </Hold>
+                    <Bold><h1> AGRICULTURAL VALUE CHAIN INTERACTIONS</h1></Bold>
+                    <Circle> </Circle>
 
-            </Left>
-            <Right>
-                <Img src={img} />
-            </Right>
-        </Wrapper>
-    </Container>
+                    <Circle2></Circle2>
+
+                    <Circle3></Circle3>
+                </Wrapper>
+            </Container>
+
+            <Container2>
+                <Box></Box>
+                <Wrapper>
+                    <Hold>
+                        <Head />
+                    </Hold>
+                    <Bold><h1>IMPROVING THE FINANCIAL PORTFOLIO OF SMALL HOLDER FARMERS</h1></Bold>
+                    <Circle> </Circle>
+
+                    <Circle2></Circle2>
+
+                    <Circle3></Circle3>
+                </Wrapper>
+            </Container2>
+
+            <Container3>
+                <Box></Box>
+                <Wrapper>
+                    <Hold>
+                        <Head />
+                    </Hold>
+                    <Bold><h1>SUPPORTING THE TRANSFORMATION OF FARMERS AND AGRICULTURAL SMES</h1></Bold>
+                    <Circle> </Circle>
+
+                    <Circle2></Circle2>
+
+                    <Circle3></Circle3>
+                </Wrapper>
+            </Container3>
+        </Slider>
+    </div>
   )
 }
 
 export default Body
-const Img = styled.img`
+const Hold = styled.div`
+    width: 95%;
+    display: flex;
+    z-index: 2;
+`
+const Box = styled.div`
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
 `
-const Right = styled.div`
-    width: 50%;
-    display: flex;
-    overflow: hidden;
-    height: 450px;
-    border-radius: 20px;
-    margin-top: 70px;
+const Circle3= styled.div`
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: red;
+    position: absolute;
+    left: 210px;
+    top: 350px;
+    background-image: url(${img2});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 `
-const Card = styled.div`
-    width: 85%;
-    height: 120px;
-    background-color: white;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-radius: 10px;
-    padding-left: 25px;
-    padding-right: 27px;
-    h4{
-        color: #03993f;
+const Circle2 = styled.div`
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+    background-color: red;
+    position: absolute;
+    left: 260px;
+    top: 220px;
+    background-image: url(${img3});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+`
+const Circle = styled.div`
+    width: 145px;
+    height: 145px;
+    border-radius: 100px;
+    background-color: red;
+    position: absolute;
+    left: 100px;
+    top: 220px;
+    background-image: url(${img});
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* background-position: center; */
+`
+const Bold = styled.div`
+    width: 550px;
+    margin-top: 130px;
+    z-index: 2;
+    h1{
+        color: white;
+        text-align: center;
     }
-    p{
-        color: #03993f;
-    }
-`
-const Top = styled.div`
-    h2{
-        color: #03993f;
-    font-weight: 900;
-    font-size: 3.5em;
-    font-family: "Cabin Sketch",cursive;
-    transition: all 1s ease;
-    font-size: 45px;
-    }
-`
-const Left = styled.div`
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    height: 450px;
-    justify-content: center;
-    /* align-items: center; */
-    background-color: white;
 `
 const Wrapper = styled.div`
-    width: 90%;
+    width: 95%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    /* background-color: red; */
 `
-
+const Container3 = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(${img3});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 200px;
+    position: relative;
+`
+const Container2 = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(${img2});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 200px;
+    position: relative;
+`
 const Container = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
+    background-image: url(${img});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 200px;
+    position: relative;
 `
