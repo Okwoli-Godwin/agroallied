@@ -1,7 +1,8 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import img from "../Assets/agi.png"
+import img from "../Assets/img.png"
+import {AiOutlineShoppingCart} from "react-icons/ai"
 
 
 
@@ -23,6 +24,9 @@ const Header = () => {
                 <Button>
                     Sign in
                 </Button>
+                <Icon><AiOutlineShoppingCart />
+                    <Circle>0</Circle>
+                </Icon>
             </Right>
         </Wrapper>
     </Container>
@@ -30,6 +34,29 @@ const Header = () => {
 }
 
 export default Header
+const Circle = styled.div`
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #03993f;
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    top: 20px;
+    right: -7px;
+`
+const Icon = styled.div`
+margin-left: 30px;
+font-size: 28px;
+height: 100%;
+display: flex;
+align-items: center;
+cursor: pointer;
+position: relative;
+`
 const Button = styled.button`
     border: none;
     outline: none;
@@ -86,5 +113,8 @@ const Container = styled.div`
     display: flex;
     height: 80px;
     justify-content: center;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    z-index: 3;
+    position: fixed;
+    background-color: #fff;
 `
