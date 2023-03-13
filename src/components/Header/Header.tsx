@@ -3,6 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import img from "../Assets/img.png"
 import {AiOutlineShoppingCart} from "react-icons/ai"
+import { NavLink } from 'react-router-dom'
 
 
 
@@ -11,12 +12,16 @@ const Header = () => {
   return (
     <Container>
         <Wrapper>
-            <Left>
+            <NavLink to="/" style={{textDecoration: "none"}}>
+                <Left>
                 <Img src={img} />
             </Left>
+            </NavLink>
             <Navhold>
                 <Nav>Product</Nav>
-                <Nav>Who we are</Nav>
+                <NavLink to="/who we are" style={{textDecoration: "none"}}>
+                    <Nav>Who we are</Nav>
+                </NavLink>
                 <Nav>Blog</Nav>
                 <Nav>Contact us</Nav>
             </Navhold>

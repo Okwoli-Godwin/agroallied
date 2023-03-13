@@ -25,7 +25,9 @@ const Body = () => {
     <div style={{overflow: "hidden"}}>
         <Slider {...settings}>
             <Container>
-                <Box></Box>
+                <Box>
+                    
+                </Box>
                 <Wrapper>
                     <Bold><h1> AGRICULTURAL VALUE CHAIN INTERACTIONS</h1></Bold>
                     <Circle> </Circle>
@@ -118,7 +120,7 @@ const Circle = styled.div`
 `
 const Bold = styled.div`
     width: 550px;
-    margin-top: 130px;
+    margin-top: 220px;
     z-index: 2;
     h1{
         color: white;
@@ -141,7 +143,7 @@ const Container3 = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-bottom: 200px;
+    padding-bottom: 250px;
     position: relative;
 `
 const Container2 = styled.div`
@@ -152,7 +154,7 @@ const Container2 = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-bottom: 200px;
+    padding-bottom: 250px;
     position: relative;
 `
 const Container = styled.div`
@@ -163,6 +165,6 @@ const Container = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-bottom: 200px;
+    padding-bottom: 250px;
     position: relative;
 `
