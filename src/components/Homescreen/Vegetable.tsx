@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import img from "../Assets/mango.jpg"
+import img from "../Assets/palmoil.png"
 import img2 from "../Assets/lea.png"
-import img3 from "../Assets/watermelon.jpg"
-import img4 from "../Assets/orange.jpg"
-import img5 from "../Assets/banana.jpg"
+import img3 from "../Assets/groundnutoil.png"
+import img4 from "../Assets/palmoil2.png"
+import img5 from "../Assets/kings.png"
 
-const Fruits = () => {
+const Vegetable = () => {
   return (
     <Container>
         <Wrapper>
@@ -17,8 +17,8 @@ const Fruits = () => {
                     <Img src={img} />
                 </Top>
                 <Down>
-                    <p>Mangoes</p>
-                    <h4>₦600</h4>
+                    <p>Palm Oil 5L</p>
+                    <h4>₦7,000.00</h4>
                     <Button>Add to Cart</Button>
                 </Down>
             </Card>
@@ -30,8 +30,8 @@ const Fruits = () => {
                     <Img src={img3} />
                 </Top>
                 <Down>
-                    <p>Watermelons</p>
-                    <h4>₦500</h4>
+                    <p>Vegetable Oil 2L</p>
+                    <h4>₦6,000.00</h4>
                     <Button>Add to Cart</Button>
                 </Down>
             </Card>
@@ -43,8 +43,8 @@ const Fruits = () => {
                     <Img src={img4} />
                 </Top>
                 <Down>
-                    <p>Oranges</p>
-                    <h4>₦150,000.00</h4>
+                    <p>Palm Oil 3L</p>
+                    <h4>₦6,000.00</h4>
                     <Button>Add to Cart</Button>
                 </Down>
             </Card>
@@ -56,8 +56,8 @@ const Fruits = () => {
                     <Img src={img5} />
                 </Top>
                 <Down>
-                    <p>Banana</p>
-                    <h4>₦150,000.00</h4>
+                    <p>King's Pure Vegetable Oil - 5L</p>
+                    <h4>₦9,000.00</h4>
                     <Button>Add to Cart</Button>
                 </Down>
             </Card>
@@ -66,11 +66,12 @@ const Fruits = () => {
   )
 }
 
-export default Fruits
+export default Vegetable
 const Img2 = styled.img`
     position: absolute;
     right: 0;
     height: 47px;
+    top: 0;
     object-fit: contain;
 `
 const Button = styled.button`
@@ -101,8 +102,7 @@ const Down = styled.div`
     }
 `
 const Img = styled.img`
-    width: 100%;
-    height: 100%;
+    width: 50%;
     object-fit: contain;
 `
 const Top = styled.div`
@@ -110,6 +110,9 @@ const Top = styled.div`
     height: 250px;
     /* background-color: red; */
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 const Card = styled.div`
     width: 270px;
