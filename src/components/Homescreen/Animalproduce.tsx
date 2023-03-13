@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import img from "../Assets/cassava.jpg"
-import img2 from "../Assets/leaf1.png"
-import img3 from "../Assets/crn.jpg"
-import img4 from "../Assets/potatoe.jpg"
-import img5 from "../Assets/beans.jpg"
+import img from "../Assets/egg.jpg"
+import img2 from "../Assets/lea.png"
+import img3 from "../Assets/fish.jpg"
+import img4 from "../Assets/chicken.jpg"
+import img5 from "../Assets/turkey.jpg"
 
-const Plantproduce = () => {
+const Animalproduce = () => {
   return (
     <Container>
         <Wrapper>
@@ -17,8 +17,8 @@ const Plantproduce = () => {
                     <Img src={img} />
                 </Top>
                 <Down>
-                    <p>Cassava</p>
-                    <h4>₦150,000.00</h4>
+                    <p>Carton of Eggs</p>
+                    <h4>₦600</h4>
                     <Button>Add to Cart</Button>
                 </Down>
             </Card>
@@ -30,8 +30,8 @@ const Plantproduce = () => {
                     <Img src={img3} />
                 </Top>
                 <Down>
-                    <p>Corn</p>
-                    <h4>₦28,000.00</h4>
+                    <p>Fish</p>
+                    <h4>₦500</h4>
                     <Button>Add to Cart</Button>
                 </Down>
             </Card>
@@ -43,7 +43,7 @@ const Plantproduce = () => {
                     <Img src={img4} />
                 </Top>
                 <Down>
-                    <p>Potatoe</p>
+                    <p>Live Chicken</p>
                     <h4>₦150,000.00</h4>
                     <Button>Add to Cart</Button>
                 </Down>
@@ -56,7 +56,7 @@ const Plantproduce = () => {
                     <Img src={img5} />
                 </Top>
                 <Down>
-                    <p>Beans</p>
+                    <p>Live turkey</p>
                     <h4>₦150,000.00</h4>
                     <Button>Add to Cart</Button>
                 </Down>
@@ -66,11 +66,12 @@ const Plantproduce = () => {
   )
 }
 
-export default Plantproduce
+export default Animalproduce
 const Img2 = styled.img`
     position: absolute;
     right: 0;
     height: 47px;
+    object-fit: contain;
 `
 const Button = styled.button`
     width: 120px;

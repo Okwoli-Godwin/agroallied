@@ -1,26 +1,52 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
+import Animalproduce from './Animalproduce'
+import Fruits from './Fruits'
 import Plantproduce from './Plantproduce'
 
 
 const Categories = () => {
     const [show, setShow] = useState(true)
+    const [show2, setShow2] = useState(false)
+    const [show3, setShow3] = useState(false)
 
     const Toggle = () => {
-        setShow(!show)
+        setShow(true)
+        setShow2(false)
+        setShow3(false)
+    }
+
+    const Toggle2 = () => {
+        setShow2(true)
+        setShow(false)
+        setShow3(false)
+    }
+
+    const Toggle3 = () => {
+        setShow3(true)
+        setShow2(false)
+        setShow(false)
     }
   return (
     <Container>
         <Wrapper>
             <Topnavs>
                 <Navs onClick={Toggle}>Plant Produce</Navs>
-                <Navs>Animal Produce</Navs>
-                <Navs>Fruits and Vegetables</Navs>
+                <Navs onClick={Toggle2}>Animal Produce</Navs>
+                <Navs onClick={Toggle3}>Fruits and Vegetables</Navs>
                 <Navs>Oil and Crops</Navs>
             </Topnavs>
 
             {show ? (
                 <Plantproduce />
+            ) : null}
+
+            {show2 ? (
+                <Animalproduce />
+            ) : null}
+
+            {show3 ? (
+                <Fruits />
             ) : null}
         </Wrapper>
     </Container>
