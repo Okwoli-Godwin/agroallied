@@ -41,7 +41,9 @@ const Categories = () => {
     }
   return (
     <Container>
-        <Wrapper>
+          <Wrapper>
+              <Best>Best Product</Best>
+              <Featured><h2>Featured Collection</h2></Featured>
             <Topnavs>
                 <Navs onClick={Toggle}>Plant Produce</Navs>
                 <Navs onClick={Toggle2}>Animal Produce</Navs>
@@ -72,6 +74,12 @@ const Categories = () => {
 }
 
 export default Categories
+const Featured = styled.div`
+    margin: 0;
+`
+const Best = styled.div`
+    
+`
 const Button = styled.button`
     width: 130px;
     height: 45px;
