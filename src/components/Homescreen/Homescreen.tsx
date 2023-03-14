@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Header from '../Header/Header'
 import Categories from './Categories'
+import Heroblog from './Heroblog'
 import Prodhero from './Prodhero'
 
 const Homescreen = () => {
@@ -15,7 +16,10 @@ const Homescreen = () => {
         <Prodhero />
         <br />
         <br />
-        <Categories />
+      <Categories />
+      <br />
+      <br />
+      <Heroblog />
     </div>
   )
 }
