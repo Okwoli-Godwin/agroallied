@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
 import Categories from './Categories'
 import Heroblog from './Heroblog'
@@ -35,6 +36,9 @@ const Homescreen = () => {
       <br />
       <br />
       <Newproducts />
+      <br />
+      <br />
+      <Footer />
     </div>
   )
 }
