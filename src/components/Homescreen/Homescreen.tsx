@@ -4,6 +4,7 @@ import Header from '../Header/Header'
 import Categories from './Categories'
 import Heroblog from './Heroblog'
 import Holdbox from './Holdbox'
+import Newproducts from './Newproducts'
 import Prodhero from './Prodhero'
 import Productdisplay from './Productdisplay'
 
@@ -30,6 +31,10 @@ const Homescreen = () => {
       <br />
       <br />
       <Holdbox />
+      <br />
+      <br />
+      <br />
+      <Newproducts />
     </div>
   )
 }
