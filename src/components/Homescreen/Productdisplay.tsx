@@ -45,10 +45,20 @@ const Productdisplay = () => {
 
               <Left>
                   <First>
-                      
+                      <Box>
+                          <Genuine><h4>100% genuine Products</h4></Genuine>
+                          <Harvest><h2>Newly Harvested Yams</h2></Harvest>
+                          <Button>Shop now</Button>
+                          <Off>-5% Sale</Off>
+                      </Box>
                   </First>
                   <Second>
-                      
+                      <Box>
+                          <Genuine><h4>100% genuine Products</h4></Genuine>
+                          <Harvest><h2>Pure Vegetables</h2></Harvest>
+                          <Button>Shop now</Button>
+                          <Off>-10% Sale</Off>
+                      </Box>
                   </Second>
               </Left>
           </Wrapper>
@@ -57,6 +67,35 @@ const Productdisplay = () => {
 }
 
 export default Productdisplay
+const Off = styled.div`
+    position: absolute;
+    width: 90px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f65005;
+    color: white;
+    border-top-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+    top: 15px;
+    right: 15px;
+`
+const Genuine = styled.div`
+    margin-left: 40px;
+    margin-top: 60px;
+    h4{
+        margin: 0;
+        color: white;
+    }
+`
+const Harvest = styled.div`
+    color: white;
+    margin-left: 40px;
+    h2{
+        margin: 0;
+    }
+`
 const Second = styled.div`
     width: 100%;
     height: 220px;
@@ -113,6 +152,7 @@ const Box = styled.div`
     background-color: rgba(0, 0, 0, 0.4);
     flex-direction: column;
     justify-content: center;
+    position: relative;
 `
 const Text = styled.div`
     h1{
