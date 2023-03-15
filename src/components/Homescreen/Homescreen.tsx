@@ -3,7 +3,9 @@ import styled from 'styled-components'
 import Header from '../Header/Header'
 import Categories from './Categories'
 import Heroblog from './Heroblog'
+import Holdbox from './Holdbox'
 import Prodhero from './Prodhero'
+import Productdisplay from './Productdisplay'
 
 const Homescreen = () => {
   return (
@@ -20,6 +22,14 @@ const Homescreen = () => {
       <br />
       <br />
       <Heroblog />
+      <br />
+      <br />
+      <Productdisplay />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Holdbox />
     </div>
   )
 }
