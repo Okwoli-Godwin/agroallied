@@ -1,5 +1,4 @@
-
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
 import img from "../Assets/img.png"
 import {AiOutlineShoppingCart} from "react-icons/ai"
@@ -9,8 +8,21 @@ import { NavLink } from 'react-router-dom'
 
 
 const Header = () => {
+    const [scroll, setScroll] = useState<Boolean>(false)
+
+    const changeHeaderColor = () => {
+        if (window.scrollY >= 70) {
+            setScroll(true)
+        } else {
+            setScroll(false)
+        }
+    };
+
+    window.addEventListener("scroll", changeHeaderColor)
   return (
-    <Container>
+      <>
+          {scroll ? (
+              <Container bd = "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px">
         <Wrapper>
             <NavLink to="/" style={{textDecoration: "none"}}>
                 <Left>
@@ -35,6 +47,34 @@ const Header = () => {
             </Right>
         </Wrapper>
     </Container>
+          ) : (
+                  <Container bd = "">
+        <Wrapper>
+            <NavLink to="/" style={{textDecoration: "none"}}>
+                <Left>
+                <Img src={img} />
+            </Left>
+            </NavLink>
+            <Navhold>
+                <Nav>Product</Nav>
+                <NavLink to="/who we are" style={{textDecoration: "none"}}>
+                    <Nav>Who we are</Nav>
+                </NavLink>
+                <Nav>Blog</Nav>
+                <Nav>Contact us</Nav>
+            </Navhold>
+            <Right>
+                <Button>
+                    Sign in
+                </Button>
+                <Icon><AiOutlineShoppingCart />
+                    <Circle>0</Circle>
+                </Icon>
+            </Right>
+        </Wrapper>
+    </Container>
+          )}
+      </>
   )
 }
 
@@ -113,11 +153,12 @@ const Wrapper = styled.div`
     align-items: cente;
     justify-content: space-between;
 `
-const Container = styled.div`
+const Container = styled.div<{bd: string}>`
     width: 100%;
     display: flex;
     height: 80px;
     justify-content: center;
+    box-shadow: ${(props) => props.bd};
     /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     z-index: 3;
     position: fixed;
