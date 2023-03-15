@@ -22,7 +22,7 @@ const Header = () => {
   return (
       <>
           {scroll ? (
-              <Container bd = "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px">
+              <Container bd="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px">
         <Wrapper>
             <NavLink to="/" style={{textDecoration: "none"}}>
                 <Left>
@@ -38,9 +38,11 @@ const Header = () => {
                 <Nav>Contact us</Nav>
             </Navhold>
             <Right>
-                <Button>
+                <NavLink to="/Dashboard">
+                    <Button>
                     Sign in
-                </Button>
+                </Button>     
+                </NavLink>
                 <Icon><AiOutlineShoppingCart />
                     <Circle>0</Circle>
                 </Icon>

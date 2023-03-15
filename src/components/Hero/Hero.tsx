@@ -105,7 +105,7 @@ const Card = styled.div`
     }
 `
 const Cardhold = styled.div`
-    width: 85%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
