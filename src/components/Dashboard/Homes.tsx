@@ -2,13 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 // import img from "../Assets/person.png"
 import Cards from './Cards'
+import Sales from './Sales'
 import Todo from './Todo'
 
 const Home = () => {
   return (
     <Container>
         <Wrapper>
-            <Cards />
+              <Cards />
+              <Sales />
         </Wrapper>
     </Container>
   )
@@ -50,7 +52,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    padding-top: 90px;
+    padding-top: 60px;
 `
 const Top = styled.div`
     width: 100%;

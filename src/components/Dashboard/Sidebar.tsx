@@ -188,4 +188,5 @@ const Container = styled.div`
     position: fixed;
     /* border-top-right-radius: 120px; */
     z-index: 2;
+    overflow: hidden;
 `
