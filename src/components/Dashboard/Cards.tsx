@@ -22,50 +22,64 @@ const Cards = () => {
     <Container>
         <Boxhold>
             <Card>
-                
+                  <Sales><T>Total Sells</T></Sales>
+                  <Doll>
+                      <h2>$3799.00</h2>
+                      <p>34.7%</p>
+                      <Com>Compared to April 2021</Com>
+                  </Doll>
             </Card>
             <Card2>
-                <Image  />
-                <Text>
-                    <p>Total Investments</p>
-                    <h2>₦0.00</h2>
-                </Text>
+                <Sales><T>Total Sells</T></Sales>
+                  <Doll>
+                      <h2>$3799.00</h2>
+                      <p>34.7%</p>
+                      <Com>Compared to April 2021</Com>
+                  </Doll>
             </Card2>
             <Card3>
-                <Image  />
-                <Text>
-                    <p>Flex Dollar</p>
-                    <h2>₦0.00</h2>
-                </Text>
+               <Sales><T>Total Sells</T></Sales>
+                  <Doll>
+                      <h2>$3799.00</h2>
+                      <p>34.7%</p>
+                      <Com>Compared to April 2021</Com>
+                  </Doll>
             </Card3>
         </Boxhold>
-
-            {show ? (
-                <Save>
-                    <Holder onClick={Canc}>
-                        <Icons><AiOutlineClose /></Icons>
-                        <Quick>
-                            <h3>Quick Save</h3>
-                            <p>Enter an amount and a destination to save to</p>
-                        </Quick>
-                        <Tap>
-                            <p>Tap here & enter .. (e.g 5000)</p>
-                            <Input placeholder='Tap here & enter..(e.g 5000)'/>
-                        </Tap>
-                        <Tap2>
-                            <p>Choose a Destination</p>
-                            <Input2 placeholder='My Piggybank - ₦0.00'/>
-                        </Tap2>
-                        <Proceed>Proceed</Proceed>
-                    </Holder>
-            </Save>
-            ) : null}
 
     </Container>
   )
 }
 
 export default Cards
+const Com = styled.div`
+    color: #828f99;
+    margin-top: 10px;
+`
+const Doll = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    h2{
+        margin: 0;
+    }
+    p{
+        color: #47ad24;
+        margin: 0;
+    }
+`
+const T = styled.div`
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #828f99;
+    font-weight: 400;
+`
+const Sales = styled.div`
+    width: 100%;
+`
 const Proceed = styled.button`
     font-size: 17px;
     color: #fff;
@@ -209,23 +223,27 @@ const Image = styled.img`
 `
 const Card3 = styled.div`
     width: 320px;
-    height: 150px;
-    background-color: #222222;
+    height: 180px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius:10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     cursor: pointer;
 `
 const Card2 = styled.div`
     width: 320px;
-    height: 150px;
-    background-color: #7E1CE6;
+    height: 180px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius:10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     cursor: pointer;
 `
