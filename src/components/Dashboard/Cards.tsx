@@ -22,11 +22,7 @@ const Cards = () => {
     <Container>
         <Boxhold>
             <Card>
-                <Image  />
-                <Text>
-                    <p>Total Sells</p>
-                    <h2>₦0.00</h2>
-                </Text>
+                
             </Card>
             <Card2>
                 <Image  />
@@ -242,6 +238,7 @@ const Card = styled.div`
     border-top-right-radius: 10px;
     border-bottom-right-radius:10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     cursor: pointer;
 `
